@@ -24,6 +24,11 @@ header .logo
   text-transform: uppercase;
   cursor: pointer;
 }
+
+video {
+  filter: blur(3.5px);
+}
+
 .toggle
 {
   position: relative;
@@ -79,9 +84,20 @@ header .logo
   left: 0;
   width: 100%;
   height: 100%;
-  background: #03a9f4;
+  background: #0a4c6b;
   mix-blend-mode: overlay;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+.inquire {
+  border-radius: 10px;
+}
+
 .text
 {
   position: relative;
@@ -146,14 +162,20 @@ header .logo
 .social li a
 {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 25px;
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
+  padding: 15px;
 }
 .social li a:hover
 {
-  transform: scale(0.5) translateY(-15px);
+  transform: scale(1.2) translateY(-15px);  
+}
+
+.twitter {
+  padding-left: 10px;
+  padding-right: -5px;
 }
 .menu
 {
